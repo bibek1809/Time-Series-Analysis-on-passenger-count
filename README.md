@@ -1,2 +1,6 @@
-# Time Series Analysis
- This project is used to predict the future passenger count on the basis of old data provided by Unicorn Investors for investment in Jet Rails transportation to achieve 1 Million monthly users with in next 18 months.The data will be predicted for future by using "SARIMA" model which provides the platform for better analysis and prediction of data to solve time series-based problem. This project helps to determine the future data prediction for seven to eight months when inception in the test file is given and allow investor for their decision. This is our(me and my teammates) third year project.Language used: Python, Framework: Flask
+Time Series Analysis
+The project is about the time series analysis and forecasting of the passenger in the train. A company has provided us
+with some past data out of which generation of some forecasting pattern for forecasting data of 7 month was done.
+Developed Time series analysis on passenger forecasting as minor project where collection of three year’s passenger
+data of a company (dataset from Kaggle) is used to build SARIMA model and then predict numbers of passengers per
+hours for 3 month and the flask is used as framework.
