@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <Link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body >
+<h1><font size="150" />Hourly Analysis to Monthly Analysis of Past Data</font>
+
+<div class="divider"/div>
+</h1>
+
+
+
+<img src="{{ user_image }}" class="imgsize" alt="User Image" >
+<form id='template' action='/template1' method='post'>
+   <p> <input type='submit' name='Submit' class="button1" value='Back' align='left'/></p>
+</form>
+<form id='template' action='/validating_3_month_' method='post'>
+   <p> <input type='submit' name='Submit' class="button2" value='Next' align='right'/></p>
+</form>
+
+</body>
+</html>

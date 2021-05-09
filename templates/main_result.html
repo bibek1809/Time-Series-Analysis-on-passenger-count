@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <Link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body >
+<h1>RESULTS<div class="divider"/div></h1>
+	<div class="boxed">
+	<p  class="sample">Dicky Fuller Test Results</p>
+
+		<div style="float: left">
+ 	 <table >
+  	  <tr>
+    	  <td id="sample1">Test Statistic:</td></tr><tr>
+    	  <td id="sample1">p-value:</td></tr><tr>
+
+    	  <td id="sample1">#Lags Used:</td></tr><tr>
+
+    	  <td id="sample1">Number of Observations Used:</td></tr><tr>
+
+    	  <td id="sample1">Critical Value (1%):  </td></tr><tr>
+
+		  <td id="sample1">Critical Value (5%):</td></tr><tr>
+
+		  <td id="sample1">Critical Value (10%):</td></tr>
+
+  	</table>
+	</div>
+	<table>
+		<div style="float: right">
+
+			{% for i in dfoutput %}
+		  	 <tr>
+     		 <td id="sample1">{{i}}</td>
+    		</tr>
+    		{% endfor %}
+  		</table>
+		</div>
+</div>
+<div class="boxed">
+  
+<p  class="sample">Root Mean Square Error:{{rms}}</p>
+
+<p class="sample">Total Number of passenger in predicted session:{{Sum}}</p></div>
+
+<form id='template' action='/main_result' method='post'>
+   <p> <input type='submit' name='Submit' class="button" value='Graphical Results' /></p>
+</form>
+</form>
+
+</body>
+</html>

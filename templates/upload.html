@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload CSV file</title>
+    <Link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+<h1>FILE UPLOADER<div class="divider"/div></h1>
+	<form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="data_file" />
+    <input type="Submit" name="Submit" value="upload">
+
+<h1>Prediction Model<div class="divider"/div></h1>
+<br>
+<p style="color:yellow;">Start Date(from 2014-09-26):<input type='text' name='Start Date'  placeholder="YYYY-MM-DD" />
+</p>
+    <p style="color:yellow;">End Date(upto 2015-04-26):<input type='text' name='End Date' placeholder="YYYY-MM-DD"  /></p>
+    
+<p><input type='submit' name='Submit' class="button" value='Submit' /></p>
+
+
+</form>
+</body>
+</html>
